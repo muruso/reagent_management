@@ -1,3 +1,24 @@
-<h1>Reagents#new</h1>
-<p>Find me in app/views/reagents/new.html.erb</p>
+<h1>試薬の追加</h1>
 
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@reagent) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :maker %>
+      <%= f.text_field :maker %>
+
+      <%= f.label :number %>
+      <%= f.text_field :number %>
+
+      <%= f.label :amount %>
+      <%= f.number_field :amount %>
+
+      <%= f.label :price %>
+      <%= f.number_field :price %>
+
+      <%= f.submit "Add Reagent", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -724,3 +724,11 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-06 00:09:36 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReagentsController#index as HTML
+  Rendering reagents/index.html.erb within layouts/application
+  Rendered reagents/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 820ms (Views: 800.3ms | ActiveRecord: 0.0ms)
+
+

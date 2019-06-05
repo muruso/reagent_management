@@ -9,6 +9,6 @@ class ReagentsController < ApplicationController
   end
   
   def new
-    
+    @reagent = Reagent.new
   end
 end
