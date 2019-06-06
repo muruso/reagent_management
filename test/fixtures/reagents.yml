@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  maker: MyString
+  number: 
+  amount: MyString
+  price: 
+  pace: 
+
+two:
+  name: MyString
+  maker: MyString
+  number: 
+  amount: MyString
+  price: 
+  pace: 
