@@ -1,1 +1,34 @@
-<h1>hello world!!</h1>
+
+<section class="panel panel-default">
+  <div class="panel-body">
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active"><a href="#">試薬一覧</a></li>
+      <li><a href="#">発注</a></li>
+      <li><a href="#">消費</a></li>
+      <li><a href="#">実験費用計算</a></li>
+    </ul>
+
+    <table class="table col-md-8">
+        <thead>
+        <tr>
+          <th class="col-md-3">#</th>
+          <th class="col-md-3">Name</th>
+          <th class="col-md-3">Maker</th>
+          <th class="col-md-3">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+          <% @reagents.each do |reagent| %>
+          <tr>
+            <td class="col-md-3"><%= reagent.id%></td>
+            <td class="col-md-3"><%= reagent.name%></td>
+            <td class="col-md-3"><%= reagent.maker%></td>
+            <td class="col-md-3"><%= reagent.price%></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+  </div>
+</section>
+
+

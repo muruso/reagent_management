@@ -1,11 +1,11 @@
 class ReagentsController < ApplicationController
   
   def index
-    
+    @reagents = Reagent.all
   end
   
   def show
-    @reagent = Reagent.first
+    @reagent = Reagent.find(params[:id])
   end
   
   def new
@@ -15,7 +15,7 @@ class ReagentsController < ApplicationController
   def create
     @reagent = Reagent.new(reagent_params)
     if @reagent.save
-      redirect_to @reagents
+      redirect_to @reagent
     else
       render 'new'
     end
